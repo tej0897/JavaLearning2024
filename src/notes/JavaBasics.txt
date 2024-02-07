@@ -1,0 +1,55 @@
+Basic Java Notes
+
+Contents:
+    1. How Java Works?
+    2. JRE and JDK
+    3. Java Code Structure
+
+______________________________________________________
+
+How Java Works?
+
+Usually, when we write code in languages like c or cpp, the executable file will only run on Windows machine (if the code was written for windows application)
+If we want the same executable file to run on Mac or Linux, we will have to do some additional work. We will have to create multiple versions of our source code to make it run in each platform.
+
+Java is Platform Independent. (ByteCode)
+Usually we write code in high level language. The compiler will convert the High-Level language into Low-Level language so the computer can understand the code written.
+Compiler will make sure there are no errors in High-Level Language and then compile the code. In case of Java, the compiler will convert the language into ByteCode, which machines understand and runs.
+
+*** Java Program can run on any devices that has JVM installed. ***
+
+So, write Java code and that executable file can run on any machine that has JVM installed on it.
+
+C or CPP : code -> compiler -> machine-level Language.
+Java: code -> compiler -> Bytecode -> machine-level language.
+
+Due to this additional step, it does make Java a little slower than other languages.
+But now, this issue is addressed with "Just-In-Time Compiler" where the compiler quickly compiles the Bytecode into Machine-level Language.
+
+______________________________________________________
+
+JRE and JDK
+
+JRE (Java Runtime Environment) is a software package that has everything required to execute a Java Program.
+Mobile phones, linux or macOS all have JRE installed in them to execute the code which we write.
+
+JDK (Java Development Kit) is a software kit that has "compiler" + "JRE"
+For writing java code, we need JDK
+
+If we are just executing Java code written by someone, just JRE is enough.
+
+Whatever Java program we run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence JVM is also known as an interpreter.
+
+______________________________________________________
+
+Java Code Structure:
+
+to compile the code:    javac filename.java
+to run the code:        java filename
+
+after we compile the code, filename.java will be converted into filename.class (Bytecode)
+After compiling, we can run the code using its respective command.
+
+JVM will look for class name mentioned in the command. After identifying it, it looks for main method.
+
+Every Java application must have at least one class and one main method. (Running a program is like running a class)
