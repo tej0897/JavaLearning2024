@@ -1,0 +1,25 @@
+Classes And Objects
+
+Contents:
+    1. Class
+    2. Rules for Class
+
+______________________________________________________
+
+Class:
+
+A model / blueprint to create an Object.
+Example: Person Class
+
+Person Class will have different attributes like weight, height, gender AND few methods like walk(), sleep(), dance()
+
+Using this template, we can create an Object "Alex" by setting the values to attributes and methods.
+
+______________________________________________________
+
+Rules for Class:
+
+1. If we have Public Class in our file, then the public class name should be same as Filename.
+2. Public class of the file should have main method.
+3.
+
