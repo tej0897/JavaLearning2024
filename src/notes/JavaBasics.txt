@@ -53,3 +53,9 @@ After compiling, we can run the code using its respective command.
 JVM will look for class name mentioned in the command. After identifying it, it looks for main method.
 
 Every Java application must have at least one class and one main method. (Running a program is like running a class)
+
+______________________________________________________
+
+To check if JDK is installed in our system, use the following command
+
+javac -version or java -version
