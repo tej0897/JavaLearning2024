@@ -3,6 +3,7 @@ Classes And Objects
 Contents:
     1. Class
     2. Rules for Class
+    3. Life of Objects
 
 ______________________________________________________
 
@@ -21,5 +22,22 @@ Rules for Class:
 
 1. If we have Public Class in our file, then the public class name should be same as Filename.
 2. Public class of the file should have main method.
-3.
+3. There can be only one Public Class per source code file.
+
+______________________________________________________
+
+Life of Objects
+
+When we create a new Object, a heap of memory will be created and the objectName will refer that heap.
+Example: Person a = new Person();
+
+If we are referencing an object by assigning value, then it will just point to the referred object. New Object will be created only when we create an object using new keyword.
+
+Example: Person b = new Person();
+
+Person c = b;   -> in this case, person c will point towards b, will not create new object.
+
+b = a;  -> person b, from pointing to b, will point to a now. only c is pointing towards b object now.
+
+c = a;  -> now all 3 objects are pointing towards AObject, nothing is pointing towards B, JVM will automatically remove this heap from memory and put it in garbage collector since it is not being used.
 
