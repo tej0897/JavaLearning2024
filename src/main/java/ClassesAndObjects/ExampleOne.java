@@ -1,6 +1,8 @@
 package ClassesAndObjects;
 
-public class ClassObjectsInformal {
+import PersonPackage.Person;
+
+public class ExampleOne {
     public static void main(String[] args) {
         Person tejas = new Person();
         tejas.age=1;
@@ -23,18 +25,4 @@ public class ClassObjectsInformal {
     }
 }
 
-class Person{
-    String name;
-    int age;
-    String gender;
 
-    void sleep(){
-        if (age <= 10){
-            System.out.println(name + " sleeps for 10+ hours a day.");
-        } else if(age <=50){
-            System.out.println(name + " sleeps for 10 hours a day.");
-        } else {
-            System.out.println(name + " sleeps less than 10 hours a day.");
-        }
-    }
-}
