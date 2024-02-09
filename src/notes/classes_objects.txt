@@ -45,5 +45,11 @@ c = a;  -> now all 3 objects are pointing towards AObject, nothing is pointing t
 
 ______________________________________________________
 
-Access Modifiers
+Access Modifiers :  can be given to Class, Variable, Method, Interface, Constructor
+
+1. public       : Can be accessed from anywhere.
+2. protected    : Code in same package and subclasses from other package can access.
+3. default      : Code in same package can be accessed.
+4. private      : Code within the same class can access.
+
 
