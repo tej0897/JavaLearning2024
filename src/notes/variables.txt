@@ -1,0 +1,95 @@
+Variables
+
+Contents:
+    1. Types of Variables
+    2. Instance Variables vs Local Variables
+    3. Variables Assignments
+    4. Type Casting
+    5. Scope of Variables
+    6. Modifiers for Variables
+    7.
+
+______________________________________________________
+
+Types of Variables:
+    a. Primitive variables      Ex: char, boolean, int, float, byte, long, double, short
+    b. Reference variables  (Holds Object reference)    Ex: Person, Animal etc
+
+______________________________________________________
+
+Instance Variables vs Local Variables
+
+Instance Variable: Variables defined inside the class and outside methods. These variables will be initialized whenever we initialize the class (Whenever we create an object for a class).
+    Ex: name, age variables for Person Class
+
+***** Instance Variables will have default values assigned to them, so if we forget / do not assign values to them, they do not throw error, unlike local variables. *****
+
+Local Variables: Variables inside a method. They must be initialized before we use it.
+
+______________________________________________________
+
+Variables Assignments
+
+If we are using long or float datatype, then post declaration, we must specify f or l based on the type.
+Example:    long example = 1000l;
+            float example2 = 10.001f;
+            double example3 = 10.011d;
+
+______________________________________________________
+
+Type Casting
+
+int x=10;
+long y = x;     -> implicit casting (long y = (long) x)
+
+the compiler does this automatically when it is scenarios like long to int. Else, we will have to do it manually. That is called explicit casting.
+
+Example for Explicit casting:
+float f = 10.50f;
+int x = (int) f;    (x value is 10 now)
+
+______________________________________________________
+
+Scope of Variables
+
+Static Variables: We can make an Instance variables static, that are common for all the objects.
+    Example: Number of eyes for a Person Object can be made static as the value for that is common.
+
+Static Variables - class level
+Instance Variables - Object level
+Local Variables - method level
+Block Variables - block level (example: if block "flag" variable)
+
+Static > Instance > Local > block
+
+______________________________________________________
+
+Modifiers for Variables:
+
+Instance variables can have the following modifiers:
+
+volatile transient static protected final int x = 10;
+
+Transient:
+To understand this, know about serialization. When we want to transfer our code from one machine to another, we serialize the code, meaning the code will be converted to Bytecode and becomes a file which will be then transferred.
+If we mention transient for a particular variable, this serialization will not happen for them.
+Sensitive data can be made transient, so that it will be ignored during serialization.
+
+Volatile: (Volatile and Final keywords cannot be used together)
+Used to make class thread safe during multi-threading environment.
+Thread-safe means multiple thread can use a method / class without any issues.
+
+
+Local Variables cannot have volatile transient static protected.
+We can use only final for local variables.
+
+______________________________________________________
+
+
+
+
+
+
+
+
+
