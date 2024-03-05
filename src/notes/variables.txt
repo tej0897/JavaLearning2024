@@ -7,7 +7,7 @@ Contents:
     4. Type Casting
     5. Scope of Variables
     6. Modifiers for Variables
-    7.
+    7. Wrapper Classes
 
 ______________________________________________________
 
@@ -84,6 +84,35 @@ Local Variables cannot have volatile transient static protected.
 We can use only final for local variables.
 
 ______________________________________________________
+
+Wrapper Classes
+
+Why do we need Wrapper classes?
+Java is an Object oriented programming language, so primitive datatype as Wrapper class will be useful for us.
+
+Example, Integer x = 10;
+    x.equals(), x.toString()
+
+    above methods present in Integer wrapper class can be used to perform operations.
+
+Autoboxing vs Unboxing
+
+Usually, when we want to create any wrapper class, we had to do the following:
+    Integer example = new Integer(1);
+or
+    Integer example = Integer.valueOf(1);
+
+Instead of writing the above, java will automatically create wrapper class for us by just mentioning the following:
+
+    Integer example = 1;
+
+This is called Autoboxing. The process of creating primitive datatype from a wrapper class is called unboxing.
+
+    int x = example;    //unboxing cause example is Integer Wrapper class.
+
+______________________________________________________
+
+
 
 
 
