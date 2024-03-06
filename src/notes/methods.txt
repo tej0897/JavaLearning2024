@@ -1,0 +1,51 @@
+Methods:
+
+Contents:
+    1. About Methods
+        a. static methods vs non-static methods
+        b. abstract methods
+        c. synchronized methods
+
+______________________________________________________
+
+About Methods:
+
+Methods are a block of code that are written to do something with the parameters and return the result.
+Example, if the return type is int and the parameters are two numbers, and the ask is to add them and send it, the code will look like the following:
+
+public int addNumbers(int a, int b){
+    return a+b;
+}
+
+A method can be called whenever we need them.
+*** If we want to access a method FROM a static method, the called method should also be static
+i.e. static method can call static methods, a static method cannot call a non-static method
+
+Work around for static vs non-static method is to create an Object of the class and call it via dot operator.
+
+                ******************
+
+Abstract methods are the ones that are declared, but not defined.
+Let's say we have created a method, but we want to define it later, we can use abstract modifier and leave it for the moment. Whoever extends this class will define. (provide the body)
+
+If we have at least one abstract method in our class, then the class must be made abstract.
+(creating objects for an abstract class is different)
+
+Example: abstract void sayHello(String name);
+
+
+                ******************
+
+synchronized:
+    If a method is marked synchronized, then only one thread can access this method at a time in multi-threading environment.
+
+
+
+
+
+
+
+
+
+
+
