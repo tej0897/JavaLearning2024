@@ -1,0 +1,26 @@
+Static Members:
+
+Contents:
+    1. What are Static Members
+
+______________________________________________________
+
+What are Static Members?
+
+They are non-access modifiers.
+We can use them for block, variables, methods and inner class.
+
+Static members are for classes, not for instances. They are created before objects.
+Static members will be created when the class loads.
+
+Static Variables:
+    1. we can have static for instance variables, not for local variables.
+
+    2. When we make an instance variable static, then it is no longer instance variable. It is a static variable now.
+
+    3. Static variables are something this is common for all the objects created from a class. Example: Number of eyes for Human class.
+
+    4. A static member cannot access a non-static member and vice-versa.
+
+    5. Since static members are class level, we can access static variables by just the class name.
+    Example: in flightTicket program, we can directly access the number of seatsAvailable by doing "flightTicket.seatsAvailable". But in case of instance variables, to access them, we need to get the exact instance of them, like flightTicket1.seatNumber.
