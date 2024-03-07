@@ -1,0 +1,50 @@
+Constructors:
+
+Contents:
+    1. What are Constructors
+    2. Constructor overloading
+
+
+______________________________________________________
+
+What are Constructors?
+    Constructors are a block of code (like methods) that will be executed when called.
+    Constructor name should have class name.
+    Constructor must not have any return type.
+
+They will be called whenever we create an object. (it will be invoked whenever we call new keyword)
+
+Constructors can have access modifiers, but they cannot be static or abstract.
+
+If we do not create any constructors, then JVM will create default constructor for us.
+
+Example: in person class/object example, we just created a Person class and added attributes and created objects with null values for age, name etc. After Object creation, we assigned values to the object using dot operator. (Alternate way is to create constructor with parameters and assign values to object while creating them)
+
+    A default constructor was created by JVM for us to create person objects. (Constructor with no argument)
+    public Person(){
+        super();
+    }
+
+Constructor must not have a return type.
+
+The only way to call a constructor from another constructor is using this() or super() keywords.
+
+All classes except interfaces will have constructors.
+
+______________________________________________________
+
+Constructor Overloading:
+    We can have multiple constructors with different parameters in the same class, based on our requirement. This concept is called Constructor Overloading.
+
+    We can use "this" keyword to call another class constructor from the same class.
+
+
+
+
+
+
+
+
+
+
+
