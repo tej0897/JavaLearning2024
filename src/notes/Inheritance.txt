@@ -1,0 +1,20 @@
+Inheritance
+
+Contents:
+    1. What is Inheritance?
+    2. Why Inheritance?
+
+
+______________________________________________________
+What is Inheritance?
+
+Mechanism where we can inherit things from parent class to child class.
+Child class can have its own properties.
+
+______________________________________________________
+
+Why Inheritance?
+    a. Re-usability
+    b. To promote polymorphism.
+
+
